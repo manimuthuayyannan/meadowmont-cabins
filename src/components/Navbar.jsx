@@ -3,9 +3,10 @@ import { Link, useLocation } from 'react-router-dom';
 
 const LogoIcon = ({ color }) => (
   <svg width="40" height="40" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 160 L100 20 L180 160 Z" stroke={color} strokeWidth="10" strokeLinejoin="round" />
-    <path d="M70 160 L100 100 L130 160 Z" fill={color} />
-    <circle cx="100" cy="170" r="5" fill={color} />
+    {/* Twin Peaks 'M' outline */}
+    <path d="M20 160 L65 40 L100 110 L135 40 L180 160 Z" stroke={color} strokeWidth="14" strokeLinejoin="round" />
+    {/* Center Pine Tree */}
+    <path d="M80 160 L100 120 L120 160 Z" fill={color} />
   </svg>
 );
 

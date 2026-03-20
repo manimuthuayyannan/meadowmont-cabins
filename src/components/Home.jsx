@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Hero from './Hero';
 import PropertyCard from './PropertyCard';
-import { properties, areaHighlights } from '../data';
+import LocalGuide from './LocalGuide';
+import { properties } from '../data';
 
 const Home = () => {
   return (
@@ -43,20 +44,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="area">
-        <div className="container">
-          <h2 className="section-title">Explore Arnold & Beyond</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-            {areaHighlights.map((site, index) => (
-              <div key={index} className="glass" style={{ padding: '2rem', borderRadius: '12px', color: 'var(--primary)', border: '1px solid #ddd' }}>
-                <h3 style={{ marginBottom: '0.5rem' }}>{site.title}</h3>
-                <div style={{ marginBottom: '1rem', color: 'var(--accent)', fontWeight: 700, fontSize: '0.8rem' }}>{site.distance} FROM CABINS</div>
-                <p style={{ color: 'var(--text-secondary)' }}>{site.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <LocalGuide />
     </main>
   );
 };

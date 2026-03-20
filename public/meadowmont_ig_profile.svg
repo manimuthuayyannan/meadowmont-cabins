@@ -1,0 +1,10 @@
+<svg width="1080" height="1080" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Brand Background -->
+  <rect width="200" height="200" fill="#2d4a3e" />
+  
+  <!-- Twin Peaks 'M' outline (Centered) -->
+  <path d="M20 160 L65 40 L100 110 L135 40 L180 160 Z" stroke="white" stroke-width="14" stroke-linejoin="round" />
+  
+  <!-- Center Pine Tree -->
+  <path d="M80 160 L100 120 L120 160 Z" fill="white" />
+</svg>

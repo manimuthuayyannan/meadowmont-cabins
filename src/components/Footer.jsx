@@ -2,8 +2,10 @@ import React from 'react';
 
 const LogoIcon = ({ color }) => (
   <svg width="30" height="30" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 160 L100 20 L180 160 Z" stroke={color} strokeWidth="10" strokeLinejoin="round" />
-    <path d="M70 160 L100 100 L130 160 Z" fill={color} />
+    {/* Twin Peaks 'M' outline */}
+    <path d="M20 160 L65 40 L100 110 L135 40 L180 160 Z" stroke={color} strokeWidth="14" strokeLinejoin="round" />
+    {/* Center Pine Tree */}
+    <path d="M80 160 L100 120 L120 160 Z" fill={color} />
   </svg>
 );
 
@@ -32,13 +34,17 @@ const Footer = () => {
           </div>
           <div className="footer-links">
             <h4>Contact</h4>
-            <p style={{ opacity: 0.7 }}>Email: stay@meadowmontcabins.com</p>
+            <p style={{ opacity: 0.7 }}>Email: <a href="mailto:meadowmontcabins@gmail.com" style={{ color: 'inherit', textDecoration: 'underline' }}>meadowmontcabins@gmail.com</a></p>
             <p style={{ opacity: 0.7 }}>Location: Arnold, California</p>
             <div style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem' }}>
-              {/* Social icons placeholder */}
-              <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)' }}></div>
-              <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)' }}></div>
-              <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)' }}></div>
+              <a href="https://instagram.com/meadowmontcabins" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'white', textDecoration: 'none', opacity: 0.9 }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                @meadowmontcabins
+              </a>
             </div>
           </div>
         </div>
